@@ -1,0 +1,21 @@
+.Pages {
+    background-color: "#8fb1fa";
+  }
+
+.gradient-text-fancy {
+    text-align: center;
+    font-size: 100px;
+    color: transparent;
+    background: conic-gradient(
+      rgb(22, 47, 158) 8%, 
+      rgb(60, 142, 156) 1% 23%, 
+      rgb(1, 126, 99) 23% 43%, 
+      rgb(89, 60, 219) 43% 60%, 
+      rgb(108, 58, 128) 60% 78%, 
+      rgb(31, 71, 94) 78% 90%
+    );
+    background-size: 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: expand-rev 0.5s ease forwards;
+  }

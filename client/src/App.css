@@ -1,0 +1,195 @@
+.App {
+  
+  background-color: "#8fb1fa";
+}
+
+.gradient-text-fancy {
+  text-align: center;
+  font-size: 100px;
+  color: transparent;
+  background: conic-gradient(
+    rgb(22, 47, 158) 8%, 
+    rgb(60, 142, 156) 1% 23%, 
+    rgb(1, 126, 99) 23% 43%, 
+    rgb(89, 60, 219) 43% 60%, 
+    rgb(108, 58, 128) 60% 78%, 
+    rgb(31, 71, 94) 78% 90%
+  );
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: expand-rev 0.5s ease forwards;
+}
+
+.gradient-text-fancy:hover {
+  animation: expand 3s ease forwards;
+}
+
+@keyframes expand {
+  0% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 275%;
+    background-position: -10em -4em;
+  }
+      
+}
+
+@keyframes expand-reverse {
+  0% {
+      background-size: 275%;
+      background-position: -10em -4em;
+    }
+    20% {
+      background-size: 55%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 50%;
+      background-position: 0 0;
+    }
+      
+}
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 30s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:40s;
+}
+
+.bg3 {
+  animation-duration:50s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+.dropzone {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 20px;
+  cursor: pointer;
+  height: 150px;
+  width: 400px;
+  border: 2px dashed cyan;
+  outline: none;
+}
+
+.dropzoneReject {
+  border: 2px dashed red;
+}
+
+.dropzoneAccept {
+  border: 2px dashed green;
+}
+
+table {
+  margin-top: 50px;
+}
+
+.button-upload {
+  margin: 30px;
+  font-size: 18px;
+  height: 55px;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 0px 2px rgba (0,0,0,0.3);
+  background: rgb(141,217,252);
+   cursor: pointer;
+ }
+
+ .button-generate-reports {
+    margin: 30px;
+    font-size: 18px;
+    height: 55px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 0px 2px rgba (0,0,0,0.3);
+    background: rgb(141,217,252);
+    cursor: pointer;
+ }
+
+ .custom-file-upload {
+  border: 1px solid #ccc;
+  background-color: rgb(141,217,252);;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.img-upload-file {
+  width: 50px;
+  height: 60px;
+}
+
+.steps-font {
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  color: transparent;
+  background: conic-gradient(
+    rgb(8, 20, 73) 8%, 
+    rgb(60, 142, 156) 1% 23%, 
+    rgb(20, 4, 41) 23% 43%, 
+    rgb(3, 36, 37) 43% 60%, 
+    rgb(6, 6, 46) 60% 78%, 
+    rgb(19, 58, 53) 78% 90%
+  );
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+}

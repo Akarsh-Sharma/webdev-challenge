@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+NRI Web developer Challenge
+This is a demo website for the NRI Web Dev challenge built with React, JavaScript, CSS, Node/Express using MySQL as the Relational Database. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Screenshots:
 
-## Available Scripts
+Installation and Setup Instructions
+Clone this repository. You will need node and npm installed on your machine. 
+Also make sure to install the dependencies needed for this project.  
 
-In the project directory, you can run:
+Since this React app has a server and client side, you will need to run npm start for both the “backend” and the “client” folders. For the RDB, you will need MySQL and MySQLworkbench. The database is called “test” and the table is called “csvdata”. Once you have these steps done, you can start up the React app.  You can also change the database configuration (i.e. the db name, table name, password, etc.) in the index.js file inside the server folder as per your needs. Once both client and backend are running, you can visit localhost:3000/Home to visit the app. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app has a navigation bar to switch between Home and Dashboard. 
+On the Home page, there are 3 steps to follow to get to the end result, i.e. getting the graphs. (Note: When using the interface, double click the buttons instead of single clicking.)
+Firstly, upload your .csv file. This will also display the data on your Home page so you can verify the data before creating your graphs. Then, upload your data to your RDB which is the MySQL workbench you set up before with the given information. Once uploaded, you can now generate your data report by clicking the “Generate” button which will conditionally render another button to take you to the dashboard. You can either click the button or use the navigation bar to go to the dashboard. On the dashboard, you will see your graphs. You can hover the graphs to look at each category within a dataset as well. The colors are auto-generated as well so they will change each time you refresh the page. This was done to account for datasets that differ from the test dataset that was given. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This was definitely a fun challenge to code. I chose MySQL as my RDB for this challenge since it is easy to use and set up for first time users. MySQL was also developed for speed so it will work well even with large datasets. This also makes the app scalable since we do not need to worry about increasing dataset time and space costs. Lastly, MySQL offers encryption using SSL so if the app requires increased security, that can be implemented in the future as well. 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The things I was proud of while making this app were definitely the insight to keep scalability and abstraction in mind. Lot of the features in this app can be redesigned easily using React components and are also very reader friendly. Additionally, code repetition/code waste was minimized and code was thoroughly commented for anyone starting up the app for the first time. I also made the frontend resemble the original NRI website to make the challenge more realistic and enjoyable! Thanks for taking the time to have a look at this React App! 
